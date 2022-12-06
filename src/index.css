@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+/* NAVBAR */
+
 nav a.active {
   background-color: rgba(105, 17, 186, 0.57);
   color: white;
@@ -45,4 +47,111 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+
+/* FORM */
+
+
+.new-rec-form {
+  margin-top: 4em;
+}
+
+label,
+input,
+select {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+select {
+  margin-left: 1.2rem;
+}
+
+form {
+  width: 30em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  margin-top: 0.2rem;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+.accent {
+  margin-left: 50px;
+}
+
+#submit-form {
+  width: 130px;
+  height: 40px;
+  background-color: rgba(105, 17, 186, 0.57);
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* ARTISTS */
+
+button {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(105, 17, 186, 0.57);
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+
+/* ARTIST CARD */
+
+#artistCard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-top: 50px;
+}
+
+#artist-image {
+  width: 500px;
+  flex-basis: auto;
+  flex-flow: row wrap;
+  display: inline;
+}
+
+
+
+/* PRINT CARD */
+
+#printCard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-top: 50px;
+}
+
+#poster-image {
+  width: 500px;
+  flex-basis: auto;
+  flex-flow: row wrap;
+  display: inline;
 }
