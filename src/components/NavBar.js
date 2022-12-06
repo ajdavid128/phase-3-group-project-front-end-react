@@ -5,12 +5,13 @@ function NavBar () {
     return (
         <nav>
             <div>
+                <h1>THE ARCHIVE</h1>
                 {/* insert logo here */}
             </div>
             <div className ="nav-links">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/artists">Artists</NavLink>
-                <NavLink to="/prints">Prints</NavLink>
+                <NavLink exact to="/">HOME</NavLink>
+                <NavLink to="/artists">ARTISTS</NavLink>
+                <NavLink to="/prints">PRINTS</NavLink>
             </div>
         </nav>
     )

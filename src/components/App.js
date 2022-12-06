@@ -7,9 +7,16 @@ import Artists from './Artists';
 import Prints from './Prints';
 
 function App() {
+
+	const [artists, setArtists] = useState([]);
+	const [prints, setPrints] = useState([]);
+
+	const history = useHistory();
+
+	
+
 	return (
 		<div className='App'>
-			<h1>App component</h1>
 			<NavBar />
 			<Switch>
 				<Route path='/artists'>
