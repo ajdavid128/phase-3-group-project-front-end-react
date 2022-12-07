@@ -38,12 +38,17 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	function handleDelete(eachPrint) {
 		fetch(`http://localhost:9292/prints/${eachPrint.id}`, {method: 'DELETE'})
 		.then(() => onDeletePrint(eachPrint))
+        window.location.reload(false)
 	}
 
 	function handleUpdateSubmit(e,eachPrint) {
 		e.preventDefault();
 
 		updatePrint(subCategory, eachPrint.id);
+
+        setSubCategory ({
+            sub_category: ''
+        })
 	}
 
 	function handleChange(e) {
@@ -76,7 +81,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 						{eachPrint.sub_category === '' ? null : `, ${eachPrint.sub_category}`}
 					</p>
 					<button onClick={() => handleDelete(eachPrint)}>Delete Print</button>
-					<button onClick={handleToggleUpdate}>Add Another Category</button>
+					<button onClick={handleToggleUpdate}>Add Sub-Category</button>
 
 					{showCategoryForm ? (
 						<form className='form-container' onSubmit={(e)=>handleUpdateSubmit(e,eachPrint)}>

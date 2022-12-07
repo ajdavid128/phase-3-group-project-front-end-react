@@ -53,7 +53,8 @@ function App() {
 		  .then (response => response.json())
 		  .then (newPrintData => {
 			setPrints([...prints, newPrintData]);
-			history.push("/prints");
+			window.location.reload(false)
+			// history.push("/prints");
 		})
 	}
 
@@ -68,7 +69,8 @@ function App() {
 		  })
 		  .then (response => response.json())
 		  .then (newPrintData => {
-			setPrints([...prints, newPrintData]);
+			setPrints([...prints, newPrintData])
+			window.location.reload(false)
 			// history.push("/prints");
 		})
 
