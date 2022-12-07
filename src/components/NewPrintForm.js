@@ -7,7 +7,6 @@ function NewPrintForm ({addNewPrint, artistId}) {
         year: 0,
         edition_size: "",
         category: "",
-        sub_category: "",
         image_url: "",
         artist_id: artistId
     })
@@ -24,7 +23,6 @@ function NewPrintForm ({addNewPrint, artistId}) {
             year: 0,
             edition_size: "",
             category: "",
-            sub_category: "",
             image_url: "",
             artist_id: artistId
         });
@@ -81,7 +79,7 @@ function NewPrintForm ({addNewPrint, artistId}) {
                     onChange={handleChange} />
             </label>
             <br /> 
-            <label className="form-labels"> Sub-Category: 
+            {/* <label className="form-labels"> Sub-Category: 
                 <input 
                     className="form-inputs" 
                     type="text" 
@@ -89,7 +87,7 @@ function NewPrintForm ({addNewPrint, artistId}) {
                     value={newPrintObj.sub_category}
                     onChange={handleChange} />
             </label>
-            <br /> 
+            <br />  */}
             <label className="form-labels"> Image: 
                 <input 
                     className="form-inputs" 

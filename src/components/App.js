@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Switch, Route, useHistory} from 'react-router-dom';
+import {Switch, Route, useHistory, useParams} from 'react-router-dom';
 
 import NavBar from './NavBar';
 import Home from './Home';
@@ -13,6 +13,9 @@ function App() {
 	const [prints, setPrints] = useState([]);
 
 	const history = useHistory();
+	// const {id} = useParams();
+
+    // console.log({id})
 
 	useEffect(() => {
 		fetch("http://localhost:9292/artists")
@@ -54,6 +57,23 @@ function App() {
 		})
 	}
 
+	function updatePrint (someNewSubCategoryObj, id) {
+		console.log(id)
+		fetch (`http://localhost:9292/prints/${id}`, {
+			method: 'PATCH',
+			headers: {
+			  'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(someNewSubCategoryObj)
+		  })
+		  .then (response => response.json())
+		  .then (newPrintData => {
+			setPrints([...prints, newPrintData]);
+			// history.push("/prints");
+		})
+
+	}
+
 	const onDeletePrint = (destroyedPrint) => {
 		const updatedPrintList = prints.filter((print) => {
 			return print.id !== destroyedPrint.id
@@ -73,7 +93,7 @@ function App() {
 			<NavBar />
 			<Switch>
 				<Route path="/artists/:id">
-          			<ArtistDetail addNewPrint={addNewPrint} onDeletePrint={onDeletePrint} />
+          			<ArtistDetail addNewPrint={addNewPrint} onDeletePrint={onDeletePrint} updatePrint={updatePrint} />
        			</Route>
 				<Route path='/artists'>
 					<Artists artists={artists} addNewArtist={addNewArtist} />
