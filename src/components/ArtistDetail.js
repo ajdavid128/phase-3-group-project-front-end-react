@@ -35,9 +35,9 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	// const artistPrint = {title, year, edition_size, category, sub_category, image_url, artist_id}
 	// console.log(eachPrints)
 
-	function handleDelete() {
-		fetch(`http://localhost:9292/prints/${id}`, {method: 'DELETE'});
-		// .then(() => onDeletePrint(artistPrint))
+	function handleDelete(eachPrint) {
+		fetch(`http://localhost:9292/prints/${eachPrint.id}`, {method: 'DELETE'})
+		.then(() => onDeletePrint(eachPrint))
 	}
 
 	function handleUpdateSubmit(e,eachPrint) {
@@ -75,7 +75,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 						Art Category: {eachPrint.category}
 						{eachPrint.sub_category === '' ? null : `, ${eachPrint.sub_category}`}
 					</p>
-					<button onClick={handleDelete}>Delete Print</button>
+					<button onClick={() => handleDelete(eachPrint)}>Delete Print</button>
 					<button onClick={handleToggleUpdate}>Add Another Category</button>
 
 					{showCategoryForm ? (

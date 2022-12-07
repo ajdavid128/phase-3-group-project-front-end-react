@@ -81,11 +81,6 @@ function App() {
 		setPrints(updatedPrintList);
 	}
 
-	
-	// function handleDelete() {
-    //     fetch(`http://localhost:9292/prints/${id}`, {method: 'DELETE'})
-    //     // .then(() => onDeletePrint(print))
-    // }
 
 
 	return (
