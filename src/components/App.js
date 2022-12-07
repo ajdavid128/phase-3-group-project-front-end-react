@@ -39,16 +39,45 @@ function App() {
 		})
 	}
 
+	function addNewPrint (someNewPrintObj) {
+		fetch (`http://localhost:9292/prints`, {
+			method: 'POST',
+			headers: {
+			  'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(someNewPrintObj)
+		  })
+		  .then (response => response.json())
+		  .then (newPrintData => {
+			setPrints([...prints, newPrintData]);
+			history.push("/prints");
+		})
+	}
+
+	const onDeletePrint = (destroyedPrint) => {
+		const updatedPrintList = prints.filter((print) => {
+			return print.id !== destroyedPrint.id
+		});
+		setPrints(updatedPrintList);
+	}
+
+	
+	// function handleDelete() {
+    //     fetch(`http://localhost:9292/prints/${id}`, {method: 'DELETE'})
+    //     // .then(() => onDeletePrint(print))
+    // }
+
+
 	return (
 		<div className='App'>
 			<NavBar />
 			<Switch>
+				<Route path="/artists/:id">
+          			<ArtistDetail addNewPrint={addNewPrint} onDeletePrint={onDeletePrint} />
+       			</Route>
 				<Route path='/artists'>
 					<Artists artists={artists} addNewArtist={addNewArtist} />
 				</Route>
-				<Route path="/artists/:id">
-          			<ArtistDetail />
-       			</Route>
 				<Route path='/prints'>
 					<Prints prints={prints}/>
 				</Route>

@@ -1,10 +1,21 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-function ArtistCard({name, location, bio, website_url, artist_photo, instagram}) {
+function ArtistCard({id, name, location, bio, website_url, artist_photo, instagram}) {
+
+    // console.log(id)
+    
+
 
     return (
-        <div id="artistCard">
-            <img id="artist-image" src={artist_photo} alt={`artist ${name}`} />
-        </div>
+        <Link to={`/artists/${id}`}>
+            <div id="artistCard">
+                <img id="artist-image" src={artist_photo} alt={`artist ${name}`} />
+                <h2>{name}</h2>
+                
+                
+            </div>
+        </Link>
     )
 }
 

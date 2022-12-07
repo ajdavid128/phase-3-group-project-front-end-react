@@ -117,10 +117,28 @@ button {
   font-weight: bold;
 }
 
+.artists {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 4rem;
+  max-width: 90%;
+  margin: 5% 0 0 5%; */
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
 
 /* ARTIST CARD */
 
 #artistCard {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: .5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

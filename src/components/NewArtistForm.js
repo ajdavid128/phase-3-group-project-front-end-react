@@ -85,7 +85,7 @@ function NewArtistForm ({addNewArtist}) {
                             name="website_url"
                             value={newArtistObj.website_url}
                             onChange={handleChange} />
-                    </label>
+                </label>
                     <br /> 
                 <label className="form-labels"> Instagram: 
                         <input 
@@ -94,7 +94,7 @@ function NewArtistForm ({addNewArtist}) {
                             name="instagram"
                             value={newArtistObj.instagram}
                             onChange={handleChange} />
-                    </label>
+                </label>
                     <br /> 
                     <input id='submit-form'type="submit" value="SUBMIT" />
             </form>

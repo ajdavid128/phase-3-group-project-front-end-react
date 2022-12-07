@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function NewPrintForm ({addNewPrint}) {
+function NewPrintForm ({addNewPrint, artistId}) {
 
     const [newPrintObj, setNewPrintObj] = useState({
         title: "",
@@ -9,15 +9,14 @@ function NewPrintForm ({addNewPrint}) {
         category: "",
         sub_category: "",
         image_url: "",
-        // artist_id: 
-        // HOW TO GRAB ARTIST ID?
+        artist_id: artistId
     })
 
     function handlePrintFormSubmit (e) {
         e.preventDefault()
 
         console.log(newPrintObj)
-        // CREATE ADDNEWPRINT FUNCTION IN APP:
+
         addNewPrint(newPrintObj) 
 
         setNewPrintObj({
@@ -27,8 +26,7 @@ function NewPrintForm ({addNewPrint}) {
             category: "",
             sub_category: "",
             image_url: "",
-            // artist_id: 
-            // HOW TO GRAB ARTIST ID?
+            artist_id: artistId
         });
     }
 
@@ -43,9 +41,9 @@ function NewPrintForm ({addNewPrint}) {
     }
 
 
+
     return (
         <div className="new-print-form">
-            <p>new print form</p>
             <form className="form-container" onSubmit={handlePrintFormSubmit}>
             <label className="form-labels"> Title: 
                 <input 
@@ -101,17 +99,10 @@ function NewPrintForm ({addNewPrint}) {
                     onChange={handleChange} />
             </label>
             <br /> 
-            {/* HOW TO REFERENCE ARTIST ID? */}
-            {/* <label className="form-labels"> Artist: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="artist_id"
-                    value={newPrintObj.artist_id}
-                    onChange={handleChange} />
-            </label>
-            <br />  */}
+            <input id='submit-form'type="submit" value="SUBMIT" />
             </form>
         </div>
     )
 }
+
+export default NewPrintForm;
