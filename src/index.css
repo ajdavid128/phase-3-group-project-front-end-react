@@ -58,7 +58,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
+
 /* HOME COMPONENT */
+
 
 #slideshow-container {
   display: flex;
@@ -73,6 +75,7 @@ nav a:hover {
 #slideshow-image img {
   position: cover;
 }
+
 
 /* FORMS */
 
@@ -224,10 +227,6 @@ textarea {
 
 /* ARTIST DETAIL */
 
-
-#artist-detail {
-  /* margin: 1rem 2rem; */
-}
 
 #artist-detail-info {
   text-align:center;
@@ -387,7 +386,3 @@ textarea {
   font-size: 16px;
   padding: 16px 32px;
 }
-
-
-/* INSTAGRAM LOGO */
-

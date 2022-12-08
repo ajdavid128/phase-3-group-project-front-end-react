@@ -5,7 +5,6 @@ function Slideshow() {
     const [images, setImages] = useState([]);
     const [nextIndex, setNextIndex] = useState(0);
 
-    // console.log(images)
 
     useEffect(() => {
         fetch('http://localhost:9292/prints/images/all')
@@ -21,7 +20,7 @@ function Slideshow() {
         } else {
             setNextIndex(0);
         }
-      }, 4000);
+    }, 4000);
 
 
     return (

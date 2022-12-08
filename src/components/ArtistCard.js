@@ -1,9 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function ArtistCard({id, name, location, bio, website_url, artist_photo, instagram}) {
-
-    // console.log(id)
+function ArtistCard({id, name, artist_photo}) {
 
     return (
         <Link to={`/artists/${id}`}>

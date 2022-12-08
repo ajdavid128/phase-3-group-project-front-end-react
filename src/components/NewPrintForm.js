@@ -42,52 +42,52 @@ function NewPrintForm ({addNewPrint, artistId}) {
     return (
         <div className="new-print-form">
             <form className="form-container" onSubmit={handlePrintFormSubmit}>
-            <label className="form-labels"> Title: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="title"
-                    value={newPrintObj.title}
-                    onChange={handleChange} />
-            </label>
-            <br /> 
-            <label className="form-labels"> Year: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="year"
-                    value={newPrintObj.year}
-                    onChange={handleChange} />
-            </label>
-            <br /> 
-            <label className="form-labels"> Edition Size: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="edition_size"
-                    value={newPrintObj.edition_size}
-                    onChange={handleChange} />
-            </label>
-            <br /> 
-            <label className="form-labels"> Category Tags: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="category"
-                    value={newPrintObj.category}
-                    onChange={handleChange} />
-            </label>
-            <br /> 
-            <label className="form-labels"> Image: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="image_url"
-                    value={newPrintObj.image_url}
-                    onChange={handleChange} />
-            </label>
-            <br /> 
-            <input id='button-submit-form'type="submit" value="SUBMIT" />
+                <label className="form-labels"> Title: 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="title"
+                        value={newPrintObj.title}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
+                <label className="form-labels"> Year: 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="year"
+                        value={newPrintObj.year}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
+                <label className="form-labels"> Edition Size: 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="edition_size"
+                        value={newPrintObj.edition_size}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
+                <label className="form-labels"> Category Tags: 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="category"
+                        value={newPrintObj.category}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
+                <label className="form-labels"> Image: 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="image_url"
+                        value={newPrintObj.image_url}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
+                <input id='button-submit-form'type="submit" value="SUBMIT" />
             </form>
         </div>
     )
