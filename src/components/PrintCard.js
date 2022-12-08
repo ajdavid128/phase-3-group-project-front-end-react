@@ -1,8 +1,15 @@
 // import {useState} from 'react'
 
 
-function PrintCard ({title, year, edition_size, category, sub_category, image_url}) {
+function PrintCard ({title, year, edition_size, category, sub_category, image_url, artists}) {
 
+  console.log(artists)
+
+  const artistArray = artists.map((eachArtist) => {
+    return (
+      {eachArtist.id === artists.id}
+    )
+  })
 
     return (
         <div className="print-container">
@@ -10,6 +17,8 @@ function PrintCard ({title, year, edition_size, category, sub_category, image_ur
           <div className="overlay">
             <div className="text-block">
               <h4>{title}</h4>
+
+              {/* <h5>{}</h5> */}
               <p>{year}</p>
             </div>
           </div>

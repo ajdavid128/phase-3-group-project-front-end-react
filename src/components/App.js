@@ -96,7 +96,7 @@ function App() {
 					<Artists artists={artists} addNewArtist={addNewArtist} />
 				</Route>
 				<Route path='/prints'>
-					<Prints prints={prints}/>
+					<Prints prints={prints} artists={artists} />
 				</Route>
 				<Route exact path='/'>
 					<Home />
