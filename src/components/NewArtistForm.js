@@ -14,7 +14,6 @@ function NewArtistForm ({addNewArtist}) {
     function handleArtistFormSubmit (e) {
         e.preventDefault()
 
-        // console.log(newArtistObj)
         addNewArtist(newArtistObj) 
 
         setNewArtistObj({
@@ -42,61 +41,61 @@ function NewArtistForm ({addNewArtist}) {
         <div className="new-artist-form">
             <form className="form-container" onSubmit={handleArtistFormSubmit}>
                 <label className="form-labels"> Name: 
-                        <input 
-                            className="form-inputs" 
-                            type="text" 
-                            name="name"
-                            value={newArtistObj.name}
-                            onChange={handleChange} />
-                    </label>
-                    <br /> 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="name"
+                        value={newArtistObj.name}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
                 <label className="form-labels"> Location: 
-                        <input 
-                            className="form-inputs" 
-                            type="text" 
-                            name="location"
-                            value={newArtistObj.location}
-                            onChange={handleChange} />
-                    </label>
-                    <br /> 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="location"
+                        value={newArtistObj.location}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
                 <label className="form-labels"> Bio: 
-                        <textarea 
-                            className="form-inputs" 
-                            type="text" 
-                            name="bio"
-                            value={newArtistObj.bio}
-                            onChange={handleChange} >
-                        </textarea>
-                    </label>
-                    <br /> 
+                    <textarea 
+                        className="form-inputs" 
+                        type="text" 
+                        name="bio"
+                        value={newArtistObj.bio}
+                        onChange={handleChange} >
+                    </textarea>
+                </label>
+                <br /> 
                 <label className="form-labels"> Photo: 
-                        <input 
-                            className="form-inputs" 
-                            type="text" 
-                            name="artist_photo"
-                            value={newArtistObj.artist_photo}
-                            onChange={handleChange} />
-                    </label>
-                    <br /> 
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="artist_photo"
+                        value={newArtistObj.artist_photo}
+                        onChange={handleChange} />
+                </label>
+                <br /> 
                 <label className="form-labels"> Website: 
-                        <input 
-                            className="form-inputs" 
-                            type="text" 
-                            name="website_url"
-                            value={newArtistObj.website_url}
-                            onChange={handleChange} />
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="website_url"
+                        value={newArtistObj.website_url}
+                        onChange={handleChange} />
                 </label>
-                    <br /> 
+                <br /> 
                 <label className="form-labels"> Instagram: 
-                        <input 
-                            className="form-inputs" 
-                            type="text" 
-                            name="instagram"
-                            value={newArtistObj.instagram}
-                            onChange={handleChange} />
+                    <input 
+                        className="form-inputs" 
+                        type="text" 
+                        name="instagram"
+                        value={newArtistObj.instagram}
+                        onChange={handleChange} />
                 </label>
-                    <br /> 
-                    <input id='button-artist-submit-form'type="submit" value="SUBMIT" />
+                <br /> 
+                <input id='button-artist-submit-form'type="submit" value="SUBMIT" />
             </form>
         </div>
     )

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Switch, Route, useHistory, useParams} from 'react-router-dom';
+import {Switch, Route, useHistory} from 'react-router-dom';
 
 import NavBar from './NavBar';
 import Home from './Home';
@@ -13,9 +13,7 @@ function App() {
 	const [prints, setPrints] = useState([]);
 
 	const history = useHistory();
-	// const {id} = useParams();
 
-    // console.log({id})
 
 	useEffect(() => {
 		fetch("http://localhost:9292/artists")
@@ -82,7 +80,6 @@ function App() {
 		});
 		setPrints(updatedPrintList);
 	}
-
 
 
 	return (

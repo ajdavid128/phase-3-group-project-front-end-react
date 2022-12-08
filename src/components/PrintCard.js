@@ -1,21 +1,19 @@
-// import {useState} from 'react'
+import React from 'react';
 
+function PrintCard ({title, year, image_url, artist_id, artists}) {
 
-function PrintCard ({title, year, edition_size, category, image_url, artist_id, artists}) {
+    const artistArray = artists.map((eachArtist) => {
+      if (eachArtist.id === artist_id) {
+        return eachArtist.name }
+    })
+          
 
-
-  const artistArray = artists.map((eachArtist) => {
-    if (eachArtist.id === artist_id) {
-      return eachArtist.name }
-  })
-        
-
-  const artistName = artistArray.filter ((eachName) => {
-    return (
-      eachName !== undefined
-    )
-  })
-  
+    const artistName = artistArray.filter ((eachName) => {
+      return (
+        eachName !== undefined
+      )
+    })
+    
 
     return (
         <div className="print-container">

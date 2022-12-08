@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import NewPrintForm from './NewPrintForm';
-// import Logo from 'public/instagram.png';
 
 function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	const [selectedArtist, setSelectedArtist] = useState([]);
@@ -13,7 +12,6 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 
 	let {id} = useParams();
 
-	// console.log(id);
 
 	useEffect(() => {
 		fetch(`http://localhost:9292/artists/${id}`)
@@ -29,12 +27,6 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	}, [id]);
 
 	const {name, location, bio, website_url, artist_photo, instagram} = selectedArtist;
-	// console.log(selectedArtist)
-
-	// const test = artistPrints.map((onePrint) => console.log(onePrint))
-
-	// const artistPrint = {title, year, edition_size, category, image_url, artist_id}
-	// console.log(eachPrints)
 
 	function handleDelete(eachPrint) {
 		fetch(`http://localhost:9292/prints/${eachPrint.id}`, {method: 'DELETE'})
@@ -77,10 +69,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 					<h2>{eachPrint.title}</h2>
 					<p>Year: {eachPrint.year}</p>
 					<p>Edition Size: {eachPrint.edition_size}</p>
-					<p>
-						Category Tags: {eachPrint.category}
-						{/* {eachPrint.category === '' ? null : `, ${eachPrint.category}`} */}
-					</p>
+					<p>Category Tags: {eachPrint.category}</p>
 					<button id="button-update-print" onClick={handleToggleUpdate}>UPDATE CATEGORIES</button>
                     <button id="button-delete-print" onClick={() => handleDelete(eachPrint)}>DELETE PRINT</button>
 					{showCategoryForm ? (
