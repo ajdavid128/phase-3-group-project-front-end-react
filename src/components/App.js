@@ -99,7 +99,7 @@ function App() {
 					<Prints prints={prints} artists={artists} />
 				</Route>
 				<Route exact path='/'>
-					<Home />
+					<Home prints={prints}/>
 				</Route>
 			</Switch>
 		</div>
