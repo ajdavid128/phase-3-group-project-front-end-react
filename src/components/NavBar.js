@@ -11,7 +11,7 @@ function NavBar () {
             <div className ="nav-links">
                 <NavLink exact to="/">HOME</NavLink>
                 <NavLink to="/artists">ARTISTS</NavLink>
-                <NavLink to="/prints">PRINTS</NavLink>
+                <NavLink to="/prints">GALLERY</NavLink>
             </div>
         </nav>
     )
