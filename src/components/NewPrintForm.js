@@ -7,7 +7,6 @@ function NewPrintForm ({addNewPrint, artistId}) {
         year: 0,
         edition_size: "",
         category: "",
-        sub_category: '',
         image_url: "",
         artist_id: artistId
     })

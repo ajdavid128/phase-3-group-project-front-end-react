@@ -33,7 +33,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 
 	// const test = artistPrints.map((onePrint) => console.log(onePrint))
 
-	// const artistPrint = {title, year, edition_size, category, sub_category, image_url, artist_id}
+	// const artistPrint = {title, year, edition_size, category, image_url, artist_id}
 	// console.log(eachPrints)
 
 	function handleDelete(eachPrint) {

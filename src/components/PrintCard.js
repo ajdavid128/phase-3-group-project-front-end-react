@@ -1,7 +1,7 @@
 // import {useState} from 'react'
 
 
-function PrintCard ({title, year, edition_size, category, sub_category, image_url, artist_id, artists}) {
+function PrintCard ({title, year, edition_size, category, image_url, artist_id, artists}) {
 
 
   const artistArray = artists.map((eachArtist) => {
