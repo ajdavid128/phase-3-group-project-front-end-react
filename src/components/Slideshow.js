@@ -26,7 +26,7 @@ function Slideshow() {
     return (
         <div id="slideshow-container">
             <div id="slideshow-image">
-                <img style={{width: 500}} src={images[nextIndex]} alt="print" ></img>
+                <img style={{width: 500}} src={images[nextIndex]} alt="print"></img>
             </div>
         </div>
     )
