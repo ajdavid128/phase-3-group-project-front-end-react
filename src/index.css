@@ -50,6 +50,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* HOME COMPONENT */
+
+#slideshow-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+}
+
+#slideshow-image img {
+  position: cover;
+  /* height: 290px; */
+}
 
 /* FORMS */
 
