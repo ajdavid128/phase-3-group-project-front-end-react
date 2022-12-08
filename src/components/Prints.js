@@ -1,10 +1,10 @@
 import React from 'react';
 import PrintCard from './PrintCard';
 
-function Prints ({prints}) {
+function Prints ({prints, artists}) {
 
     const printsArray = prints.map((eachPrint) => {
-        return <PrintCard key={eachPrint.id} {...eachPrint} />;
+        return <PrintCard key={eachPrint.id} {...eachPrint} artists={artists} />;
     });
 
     return (
@@ -13,6 +13,5 @@ function Prints ({prints}) {
         </div>
     )
 }
-
 
 export default Prints;
