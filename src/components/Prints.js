@@ -14,5 +14,4 @@ function Prints ({prints}) {
     )
 }
 
-
 export default Prints;

@@ -17,7 +17,7 @@ code {
 
 
 nav a.active {
-  background-color: rgba(105, 17, 186, 0.57);
+  background-color: #aa84d0;
   color: white;
   align-items: center;
 }
@@ -99,7 +99,7 @@ textarea {
 #button-submit-form {
   width: 130px;
   height: 40px;
-  background-color: rgba(105, 17, 186, 0.57);
+  background-color: #aa84d0;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
@@ -118,7 +118,7 @@ textarea {
 #button-artist-submit-form {
   width: 130px;
   height: 40px;
-  background-color: rgba(105, 17, 186, 0.57);
+  background-color: #aa84d0;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
@@ -182,7 +182,7 @@ textarea {
 }
 
 #artistCard:hover {
-  box-shadow: 3px 4px rgb(105, 17, 186, 0.57);
+  box-shadow: 3px 4px #aa84d0;
   background-color:rgb(254, 252, 204)
 }
 
@@ -198,7 +198,7 @@ textarea {
 
 
 #artist-detail {
-  margin: 1rem 2rem;
+  /* margin: 1rem 2rem; */
 }
 
 #artist-detail-info {
@@ -222,7 +222,6 @@ textarea {
   text-align: center;
   border: 1px solid #2a2a2a;
   padding: 2rem;
-  text-align:center;
   justify-content: center;
   width: 600px;
   margin: auto;
@@ -240,7 +239,7 @@ textarea {
 #button-update-print {
   width: 250px;
   height: 40px;
-  background-color: rgb(105, 17, 186, 0.57);
+  background-color: #aa84d0;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
@@ -311,6 +310,54 @@ textarea {
   flex-basis: auto;
   flex-flow: row wrap;
   display: inline;
+}
+
+
+/* PRINTS PAGE */
+
+
+.print-container {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+}
+
+.print-container-images {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.print-container:hover .print-container-images {
+  opacity: 0.3;
+}
+
+.print-container:hover .overlay {
+  opacity: 1;
+}
+
+.text-block {
+  background-color: #aa84d0;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 
