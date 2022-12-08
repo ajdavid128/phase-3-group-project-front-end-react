@@ -9,7 +9,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [showForm, setShowForm] = useState(false);
 	const [showCategoryForm, setShowCategoryForm] = useState(false);
-	const [subCategory, setSubCategory] = useState({sub_category: ''});
+	const [category, setCategory] = useState({category: ''});
 
 	let {id} = useParams();
 
@@ -45,10 +45,10 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	function handleUpdateSubmit(e,eachPrint) {
 		e.preventDefault();
 
-		updatePrint(subCategory, eachPrint.id);
+		updatePrint(category, eachPrint.id);
 
-        setSubCategory ({
-            sub_category: ''
+        setCategory ({
+            category: ''
         })
 	}
 
@@ -56,7 +56,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 		const key = e.target.name;
 		const value = e.target.value;
 
-		setSubCategory({
+		setCategory({
 			[key]: value,
 		});
 	}
@@ -78,20 +78,20 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 					<p>Year: {eachPrint.year}</p>
 					<p>Edition Size: {eachPrint.edition_size}</p>
 					<p>
-						Art Category: {eachPrint.category}
-						{eachPrint.sub_category === '' ? null : `, ${eachPrint.sub_category}`}
+						Category Tags: {eachPrint.category}
+						{/* {eachPrint.category === '' ? null : `, ${eachPrint.category}`} */}
 					</p>
-					<button id="button-update-print" onClick={handleToggleUpdate}>ADD SUB-CATEGORY</button>
+					<button id="button-update-print" onClick={handleToggleUpdate}>UPDATE CATEGORIES</button>
                     <button id="button-delete-print" onClick={() => handleDelete(eachPrint)}>DELETE PRINT</button>
 					{showCategoryForm ? (
 						<form id="form-category" className='form-container' onSubmit={(e)=>handleUpdateSubmit(e,eachPrint)}>
 							<label className='form-labels'>
-								Additional Category:
+								Categories:
 								<input
 									className='form-inputs'
 									type='text'
-									name='sub_category'
-									value={subCategory.sub_category}
+									name='category'
+									value={category.category}
 									onChange={handleChange}
 								/>
 							</label>

@@ -70,7 +70,7 @@ function NewPrintForm ({addNewPrint, artistId}) {
                     onChange={handleChange} />
             </label>
             <br /> 
-            <label className="form-labels"> Category: 
+            <label className="form-labels"> Category Tags: 
                 <input 
                     className="form-inputs" 
                     type="text" 
