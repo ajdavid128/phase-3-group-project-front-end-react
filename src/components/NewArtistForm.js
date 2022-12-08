@@ -96,7 +96,7 @@ function NewArtistForm ({addNewArtist}) {
                             onChange={handleChange} />
                 </label>
                     <br /> 
-                    <input id='submit-form'type="submit" value="SUBMIT" />
+                    <input id='button-artist-submit-form'type="submit" value="SUBMIT" />
             </form>
         </div>
     )
