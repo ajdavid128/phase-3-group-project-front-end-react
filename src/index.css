@@ -251,7 +251,9 @@ textarea {
   padding: 2rem;
   justify-content: center;
   width: 600px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 #artist-detail-print-image {
