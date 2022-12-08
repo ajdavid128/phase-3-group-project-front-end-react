@@ -17,8 +17,10 @@ function Artists ({artists, addNewArtist}) {
     return (
         <div className="artists">
             <div>{artistArray}</div>
-            <button onClick={handleToggleForm}>{showForm ? "Hide Artist Form" : "Add New Artist!"}</button>
-            {showForm ? <NewArtistForm addNewArtist={addNewArtist} /> : null}
+            <div id="center-artist-button">
+                <button id="button-add-new-artist" onClick={handleToggleForm}>{showForm ? "HIDE FORM" : "ADD ARTIST"}</button>
+            </div>    
+                {showForm ? <NewArtistForm addNewArtist={addNewArtist} /> : null}
             
         </div>
     )

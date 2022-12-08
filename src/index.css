@@ -12,7 +12,9 @@ code {
     monospace;
 }
 
+
 /* NAVBAR */
+
 
 nav a.active {
   background-color: rgba(105, 17, 186, 0.57);
@@ -24,7 +26,6 @@ nav {
   display: flex;
   align-items: center;
   font-size: 1.8em;
-  /* margin-top: 0.5em; */
   font-weight: bold;
 }
 
@@ -50,7 +51,7 @@ nav a:hover {
 }
 
 
-/* FORM */
+/* FORMS */
 
 
 .new-rec-form {
@@ -95,7 +96,7 @@ textarea {
   margin-left: 50px;
 }
 
-#submit-form {
+#button-submit-form {
   width: 130px;
   height: 40px;
   background-color: rgba(105, 17, 186, 0.57);
@@ -103,60 +104,86 @@ textarea {
   border: 1px black solid;
   font-size: 1.25em;
   font-weight: bold;
+  margin: 0rem 0rem 0rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* ARTISTS */
+#button-submit-form:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
+}
 
-button {
-  width: 200px;
+#button-artist-submit-form {
+  width: 130px;
   height: 40px;
   background-color: rgba(105, 17, 186, 0.57);
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
   font-weight: bold;
-  margin: 1rem 2rem 3rem;
+  margin: 0rem 0rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.artists {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 4rem;
-  max-width: 90%;
-  margin: 5% 0 0 5%; */
-  
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
-  justify-content: center; */
+#button-artist-submit-form:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
+}
+
+#form-category {
+  margin-top: 20px;
+}
+
+
+/* ARTISTS */
+
+
+#center-artist-button {
+  width: 300px;
+  margin: auto;
+}
+
+#button-add-new-artist {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(161, 246, 178);
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 1rem 2rem 2rem 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#button-add-new-artist:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
 }
 
 
 /* ARTIST CARD */
 
-/* #artistCard {
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-  padding: .5rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  row-gap: 30px;
-  column-gap: 30px;
-  margin-top: 50px;
-} */
 
 #artistCard {
   text-align: center;
-  border: 2px solid #bebebe;
+  border: 1px solid #2a2a2a;
   padding: 1rem;
   height: 25rem;
   width: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  /* box-shadow: 3px 4px #e04b52; */
+  box-shadow: 3px 4px rgba(0,0,0);
+}
+
+#artistCard:hover {
+  box-shadow: 3px 4px rgb(105, 17, 186, 0.57);
+  background-color:rgb(254, 252, 204)
 }
 
 #artist-image {
@@ -164,19 +191,111 @@ button {
   object-fit: contain;
   height: 20rem;
   width: 25rem;
-  /* width: auto; */
 }
 
-/* #artist-image {
-  width: 500px;
-  flex-basis: auto;
-  flex-flow: row wrap;
-  display: inline;
-} */
 
+/* ARTIST DETAIL */
+
+
+#artist-detail {
+  margin: 1rem 2rem;
+}
+
+#artist-detail-info {
+  text-align:center;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+#artist-detail-photo {
+  justify-self: center;
+  object-fit: contain;
+  height:100%;
+  max-height:400px;
+  width:100%;
+  max-width:600px;
+}
+
+#artist-detail-print-card {
+  text-align: center;
+  border: 1px solid #2a2a2a;
+  padding: 2rem;
+  text-align:center;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+}
+
+#artist-detail-print-image {
+  justify-self: center;
+  object-fit: contain;
+  height:100%;
+  max-height:600px;
+  width:100%;
+  max-width:600px;
+}
+
+#button-update-print {
+  width: 250px;
+  height: 40px;
+  background-color: rgb(105, 17, 186, 0.57);
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#button-update-print:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
+}
+
+#button-delete-print {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(245, 128, 98);
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 1rem 0rem 0rem 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#button-delete-print:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
+}
+
+#button-add-new-print {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(161, 246, 178);
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 1rem 0rem 0rem 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#button-add-new-print:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
+}
 
 
 /* PRINT CARD */
+
 
 #printCard {
   display: flex;
@@ -193,3 +312,7 @@ button {
   flex-flow: row wrap;
   display: inline;
 }
+
+
+/* INSTAGRAM LOGO */
+

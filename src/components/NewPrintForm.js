@@ -40,7 +40,6 @@ function NewPrintForm ({addNewPrint, artistId}) {
     }
 
 
-
     return (
         <div className="new-print-form">
             <form className="form-container" onSubmit={handlePrintFormSubmit}>
@@ -80,15 +79,6 @@ function NewPrintForm ({addNewPrint, artistId}) {
                     onChange={handleChange} />
             </label>
             <br /> 
-            {/* <label className="form-labels"> Sub-Category: 
-                <input 
-                    className="form-inputs" 
-                    type="text" 
-                    name="sub_category"
-                    value={newPrintObj.sub_category}
-                    onChange={handleChange} />
-            </label>
-            <br />  */}
             <label className="form-labels"> Image: 
                 <input 
                     className="form-inputs" 
@@ -98,7 +88,7 @@ function NewPrintForm ({addNewPrint, artistId}) {
                     onChange={handleChange} />
             </label>
             <br /> 
-            <input id='submit-form'type="submit" value="SUBMIT" />
+            <input id='button-submit-form'type="submit" value="SUBMIT" />
             </form>
         </div>
     )

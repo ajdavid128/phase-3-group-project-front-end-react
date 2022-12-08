@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import NewPrintForm from './NewPrintForm';
+// import Logo from 'public/instagram.png';
 
 function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	const [selectedArtist, setSelectedArtist] = useState([]);
@@ -70,23 +71,21 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 
 	const printArray = artistPrints.map((eachPrint,i) => {
 		return (
-			<div id='' key={i}>
-				<img src={eachPrint.image_url} alt={`${eachPrint.title}`} />
+			<div id='artist-detail-print-card' key={i}>
+				<img id="artist-detail-print-image" src={eachPrint.image_url} alt={`${eachPrint.title}`} />
 				<div>
-					<h2>Title: "{eachPrint.title}"</h2>
+					<h2>{eachPrint.title}</h2>
 					<p>Year: {eachPrint.year}</p>
 					<p>Edition Size: {eachPrint.edition_size}</p>
 					<p>
 						Art Category: {eachPrint.category}
 						{eachPrint.sub_category === '' ? null : `, ${eachPrint.sub_category}`}
 					</p>
-					<button onClick={() => handleDelete(eachPrint)}>Delete Print</button>
-					<button onClick={handleToggleUpdate}>Add Sub-Category</button>
-
+					<button id="button-update-print" onClick={handleToggleUpdate}>ADD SUB-CATEGORY</button>
+                    <button id="button-delete-print" onClick={() => handleDelete(eachPrint)}>DELETE PRINT</button>
 					{showCategoryForm ? (
-						<form className='form-container' onSubmit={(e)=>handleUpdateSubmit(e,eachPrint)}>
+						<form id="form-category" className='form-container' onSubmit={(e)=>handleUpdateSubmit(e,eachPrint)}>
 							<label className='form-labels'>
-								{' '}
 								Additional Category:
 								<input
 									className='form-inputs'
@@ -97,7 +96,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 								/>
 							</label>
 							<br />
-							<input id='submit-form' type='submit' value='SUBMIT' />
+							<input id='button-submit-form' type='submit' value='SUBMIT' />
 						</form>
 					) : null}
 				</div>
@@ -108,20 +107,20 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 	return (
 		<>
 			{!isLoaded ? <h2>Loading...</h2> :
-			<div>
-				<div>
-					<h1>{name}</h1>
+			<div id="artist-detail">
+				<div id="artist-detail-info">
+					<h1>{name.toUpperCase()}</h1>
 					<h3>{location}</h3>
-					<img src={artist_photo} alt={`artist ${name}`} />
+					<img id="artist-detail-photo" src={artist_photo} alt={`artist ${name}`} />
 					<h3>{bio}</h3>
-					<h4>Instagram: {instagram}</h4>
+			        <h3>IG: {instagram}</h3>
 					<a href={website_url}>See more of {name}'s work here!</a>
 				</div>
 				{printArray}
-				<div>
-					<button onClick={handleToggleForm}>{showForm ? 'Hide Print Form' : 'Add New Print!'}</button>
-					{showForm ? <NewPrintForm addNewPrint={addNewPrint} artistId={id} /> : null}
+				<div id="center-artist-button">
+					<button id="button-add-new-print" onClick={handleToggleForm}>{showForm ? 'HIDE FORM' : 'ADD PRINT'}</button>
 				</div>
+                    {showForm ? <NewPrintForm addNewPrint={addNewPrint} artistId={id} /> : null}
 			</div>}
 		</>
 	);
