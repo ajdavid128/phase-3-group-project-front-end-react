@@ -58,14 +58,14 @@ function App() {
 		})
 	}
 
-	function updatePrint (someNewSubCategoryObj, id) {
+	function updatePrint (someNewCategoryObj, id) {
 		console.log(id)
 		fetch (`http://localhost:9292/prints/${id}`, {
 			method: 'PATCH',
 			headers: {
 			  'Content-Type': 'application/json'
 			},
-			body: JSON.stringify(someNewSubCategoryObj)
+			body: JSON.stringify(someNewCategoryObj)
 		  })
 		  .then (response => response.json())
 		  .then (newPrintData => {

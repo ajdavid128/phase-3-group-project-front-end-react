@@ -1,25 +1,30 @@
 // import {useState} from 'react'
 
 
-function PrintCard ({title, year, edition_size, category, sub_category, image_url, artists}) {
+function PrintCard ({title, year, edition_size, category, sub_category, image_url, artist_id, artists}) {
 
-  console.log(artists)
 
   const artistArray = artists.map((eachArtist) => {
+    if (eachArtist.id === artist_id) {
+      return eachArtist.name }
+  })
+        
+
+  const artistName = artistArray.filter ((eachName) => {
     return (
-      {eachArtist.id === artists.id}
+      eachName !== undefined
     )
   })
+  
 
     return (
         <div className="print-container">
           <img className="print-container-images" src={image_url} alt="screen printed poster" />
           <div className="overlay">
             <div className="text-block">
-              <h4>{title}</h4>
-
-              {/* <h5>{}</h5> */}
-              <p>{year}</p>
+              <h3>{title}</h3>
+              <h4>{artistName[0]}</h4>
+              <h4>{year}</h4>
             </div>
           </div>
         </div>
