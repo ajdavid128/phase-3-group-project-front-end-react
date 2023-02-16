@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: white; */
 }
 
 code {
@@ -13,18 +12,16 @@ code {
     monospace;
 }
 
-
 /* NAVBAR */
 
 #squeegee {
   width: 450px;
   margin-top: 10px;
   margin-left: 20px;
-
 }
 
 nav a.active {
-  background-color: #aa84d0;
+  background-color: #ff7404;
   color: white;
   align-items: center;
 }
@@ -34,7 +31,6 @@ nav {
   align-items: center;
   font-size: 1.8em;
   font-weight: bold;
-  /* background-color: #666666; */
 }
 
 nav img {
@@ -58,9 +54,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
-/* HOME COMPONENT */
-
+/* SLIDESHOW */
 
 #slideshow-container {
   display: flex;
@@ -69,16 +63,16 @@ nav a:hover {
   align-items: center;
   width: 100%;
   z-index: 0;
-  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 #slideshow-image img {
   position: cover;
+  border: 5px solid black
 }
 
-
 /* FORMS */
-
 
 .new-rec-form {
   margin-top: 4em;
@@ -125,7 +119,19 @@ textarea {
 #button-submit-form {
   width: 130px;
   height: 40px;
-  background-color: #aa84d0;
+  background-color: #ff7404;
+  color: white;
+  border: 1px black solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0rem 0rem 0rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#button-submit-print-form {
+  width: 130px;
+  height: 40px;
+  background-color: #482c4c;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
@@ -141,10 +147,16 @@ textarea {
   border: 2px #000000 solid;
 }
 
+#button-submit-print-form:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 2px #000000 solid;
+}
+
 #button-artist-submit-form {
   width: 130px;
   height: 40px;
-  background-color: #aa84d0;
+  background-color: #482c4c;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
@@ -164,9 +176,13 @@ textarea {
   margin-top: 20px;
 }
 
-
 /* ARTISTS */
 
+.artists {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  background-color: #aa84d0;
+}
 
 #center-artist-button {
   width: 300px;
@@ -176,12 +192,12 @@ textarea {
 #button-add-new-artist {
   width: 200px;
   height: 40px;
-  background-color: #45734b/*rgb(161, 246, 178)*/;
+  background-color: #ff7404;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
   font-weight: bold;
-  margin: 1rem 2rem 2rem 3rem;
+  margin: .5rem 2rem 0rem 3rem;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -192,12 +208,13 @@ textarea {
   border: 2px #000000 solid;
 }
 
-
 /* ARTIST CARD */
 
 #artist-grid {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #artistCard {
@@ -208,13 +225,21 @@ textarea {
   width: 25rem;
   display: inline-grid;
   justify-content: center;
-  margin: 1rem 2rem;
+  margin: 0rem 2rem 2rem;
   box-shadow: 3px 4px rgba(0,0,0);
+  color: black;
+  text-decoration: none;
+  background-color: white;
 }
 
+a:link { text-decoration: none; color: black}
+a:visited { text-decoration: none; color: black}
+a:hover { text-decoration: underline; color: black }
+a:active { text-decoration: none; color: black}
+
 #artistCard:hover {
-  box-shadow: 3px 4px #aa84d0;
-  background-color:rgb(254, 252, 204)
+  box-shadow: 3px 4px #ff7404;
+  /* background-color:rgb(254, 252, 204) */
 }
 
 #artist-image {
@@ -224,25 +249,29 @@ textarea {
   width: 25rem;
 }
 
-
 /* ARTIST DETAIL */
 
+#artist-detail {
+  background-color: #aa84d0;
+  padding-top: 1px;
+  padding-bottom: 25px;
+}
 
 #artist-detail-info {
   text-align:center;
   justify-content: center;
   width: 600px;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 #artist-detail-photo {
   justify-self: center;
   object-fit: contain;
-  height:100%;
-  max-height:400px;
-  width:100%;
-  max-width:600px;
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  max-width: 600px;
 }
 
 #artist-detail-print-card {
@@ -254,6 +283,7 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+  background-color: white;
 }
 
 #artist-detail-print-image {
@@ -286,7 +316,7 @@ textarea {
 #button-delete-print {
   width: 200px;
   height: 40px;
-  background-color: rgb(245, 128, 98);
+  background-color: #ff7404;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
@@ -305,12 +335,12 @@ textarea {
 #button-add-new-print {
   width: 200px;
   height: 40px;
-  background-color: #45734b/*rgb(161, 246, 178)*/;
+  background-color: #482c4c;
   color: white;
   border: 1px black solid;
   font-size: 1.25em;
   font-weight: bold;
-  margin: 1rem 0rem 0rem 3rem;
+  margin: 0rem 0rem .5rem 3rem;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -321,9 +351,7 @@ textarea {
   border: 2px #000000 solid;
 }
 
-
 /* PRINT CARD */
-
 
 #printCard {
   display: flex;
@@ -341,17 +369,21 @@ textarea {
   display: inline;
 }
 
-
 /* PRINTS PAGE */
 
+#gallery {
+  background-color: #aa84d0;
+}
 
 .print-container {
   position: relative;
   text-align: center;
-  padding: 2rem;
+  padding-top: 20px;
+  padding-bottom: 25px;
   justify-content: center;
   width: 600px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .print-container-images {
@@ -383,7 +415,7 @@ textarea {
 }
 
 .text-block {
-  background-color: #aa84d0;
+  background-color: #ff7404;
   color: white;
   font-size: 16px;
   padding: 16px 32px;

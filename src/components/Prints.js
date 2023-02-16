@@ -3,15 +3,15 @@ import PrintCard from './PrintCard';
 
 function Prints ({prints, artists}) {
 
-    const printsArray = prints.map((eachPrint) => {
-        return <PrintCard key={eachPrint.id} {...eachPrint} artists={artists} />;
-    });
+  const printsArray = prints.map((eachPrint) => {
+    return <PrintCard key={eachPrint.id} {...eachPrint} artists={artists} />;
+  });
 
-    return (
-        <div>
-            {printsArray}
-        </div>
-    )
+  return (
+    <div id="gallery">
+      {printsArray}
+    </div>
+  )
 }
 
 export default Prints;

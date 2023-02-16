@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Switch, Route, useHistory} from 'react-router-dom';
-
 import NavBar from './NavBar';
 import Home from './Home';
 import Artists from './Artists';
@@ -13,7 +12,6 @@ function App() {
 	const [prints, setPrints] = useState([]);
 
 	const history = useHistory();
-
 
 	useEffect(() => {
 		fetch("http://localhost:9292/artists")
@@ -57,7 +55,7 @@ function App() {
 	}
 
 	function updatePrint (someNewCategoryObj, id) {
-		console.log(id)
+		// console.log(id)
 		fetch (`http://localhost:9292/prints/${id}`, {
 			method: 'PATCH',
 			headers: {
@@ -81,14 +79,13 @@ function App() {
 		setPrints(updatedPrintList);
 	}
 
-
 	return (
 		<div className='App'>
 			<NavBar />
 			<Switch>
 				<Route path="/artists/:id">
-          			<ArtistDetail addNewPrint={addNewPrint} onDeletePrint={onDeletePrint} updatePrint={updatePrint} />
-       			</Route>
+          <ArtistDetail addNewPrint={addNewPrint} onDeletePrint={onDeletePrint} updatePrint={updatePrint} />
+       	</Route>
 				<Route path='/artists'>
 					<Artists artists={artists} addNewArtist={addNewArtist} />
 				</Route>
