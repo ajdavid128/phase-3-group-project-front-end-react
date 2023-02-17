@@ -15,6 +15,10 @@ Users are able to:
 - On an artist's detail page- add a new print by submitting a form, update an existing print's category tags, or delete an existing print.
 - View a gallery of all print images with info about each print on the Gallery page.
 
+## Demos:
+
+[Watch me demo the entire app here!](https://vimeo.com/799986630)
+
 **Home Page:**
 
 ![Home Page Slideshow Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/51b64a68-852c-485a-be97-d8131ec4ecc9.gif?ClientID=vimeo-core-prod&Date=1676663242&Signature=7aa5c985099a257b6772af43c1df6de55c873666)
@@ -27,9 +31,9 @@ Users are able to:
 
 ![Add New Artist Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/b69f974e-5edb-4551-9728-30cb75010933.gif?ClientID=vimeo-core-prod&Date=1676671759&Signature=9bb288aa8643e0f470416ac68be6740676bf888a)
 
-<!-- **Add New Print Feature:**
+**Add New Print Feature:**
 
-![Add New Print Gif]() -->
+![Add New Print Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/35a43647-83ee-4576-a8fb-c341ffda81ea.gif?ClientID=vimeo-core-prod&Date=1676673537&Signature=9e841b51a358439419dec073b6a49fa099a04399)
 
 **Prints Gallery:**
 
