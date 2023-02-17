@@ -17,7 +17,7 @@ Users are able to:
 
 ## Demos:
 
-[Watch me demo the entire app here!](https://vimeo.com/799986630)
+[Watch Leah demo the entire app here!](https://vimeo.com/799986630)
 
 **Home Page:**
 
