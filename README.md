@@ -13,4 +13,6 @@ Users are able to:
 - On an artist's detail page- add a new print by submitting a form, update an existing print's category tags, or delete an existing print.
 - View a gallery of all print images with info about each print on the Gallery page.
 
+![THE ARCHIVE Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/51b64a68-852c-485a-be97-d8131ec4ecc9.gif?ClientID=vimeo-core-prod&Date=1676663242&Signature=7aa5c985099a257b6772af43c1df6de55c873666)
+
 > All artwork and artist info are property of their rightful respective owner. Usage of artist and print images are for educational, non-commercial purposes only.
