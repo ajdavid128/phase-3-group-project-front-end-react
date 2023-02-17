@@ -20,7 +20,7 @@ function Artists ({artists, addNewArtist}) {
       <div id="center-artist-button">
         <button id="button-add-new-artist" onClick={handleToggleForm}>{showForm ? "HIDE FORM" : "ADD ARTIST"}</button>
       </div>    
-      {showForm ? <NewArtistForm addNewArtist={addNewArtist} /> : null}
+      {showForm ? <NewArtistForm addNewArtist={addNewArtist} setShowForm={setShowForm} showForm={showForm} /> : null}
     </div>
   )
 }

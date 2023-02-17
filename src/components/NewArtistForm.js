@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function NewArtistForm ({addNewArtist}) {
+function NewArtistForm ({addNewArtist, setShowForm, showForm}) {
     
   const [newArtistObj, setNewArtistObj] = useState({
     name: "",
@@ -24,6 +24,8 @@ function NewArtistForm ({addNewArtist}) {
       artist_photo: "",
       instagram: ""
     });
+
+    setShowForm(!showForm)
   }
 
   function handleChange (e) {
