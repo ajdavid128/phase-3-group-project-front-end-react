@@ -23,9 +23,13 @@ Users are able to:
 
 ![Artist Cards Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/8b37a371-0625-48c7-af79-02cfa664d6bb.gif?ClientID=vimeo-core-prod&Date=1676670122&Signature=ddf146bce910b291472b42e44c028401dd0f1f8c)
 
-**Artist Detail Page:**
+**Add New Artist Feature:**
 
-![Artist Detail Page Gif]()
+![Add New Artist Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/b69f974e-5edb-4551-9728-30cb75010933.gif?ClientID=vimeo-core-prod&Date=1676671759&Signature=9bb288aa8643e0f470416ac68be6740676bf888a)
+
+<!-- **Add New Print Feature:**
+
+![Add New Print Gif]() -->
 
 **Prints Gallery:**
 
