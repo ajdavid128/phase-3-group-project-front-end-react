@@ -14,13 +14,17 @@ Users are able to:
 - View a gallery of all print images with info about each print on the Gallery page.
 
 **Home Page:**
+
 ![THE ARCHIVE Home Page Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/51b64a68-852c-485a-be97-d8131ec4ecc9.gif?ClientID=vimeo-core-prod&Date=1676663242&Signature=7aa5c985099a257b6772af43c1df6de55c873666)
 
 <!-- **Artists Page:** -->
 
+
 <!-- **Artist Detail Page:** -->
 
+
 **Print Gallery:**
+
 ![THE ARCHIVE Print Gallery Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/cf2e3c13-38f8-423a-af26-8f9c02bc20fc.gif?ClientID=vimeo-core-prod&Date=1676664383&Signature=05316e6edaf0c04a32edf6a6aabb81a77889299c)
 
 > All artwork and artist info are property of their rightful respective owner. Usage of artist and print images are for educational, non-commercial purposes only.
