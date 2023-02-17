@@ -1,12 +1,18 @@
 # THE ARCHIVE
 
-THE ARCHIVE was created in 1 week by Flatiron School Software Engineering Students, Aaron David & Leah Cardoz, for their Phase 3 Project.
+Welcome to the frontend of THE ARCHIVE!
 
-THE ARCHIVE is a React & Ruby application showcasing screenprint artists and their prints where users can submit their favorite artists and artwork.
+This React single-page application was designed in tandem with a [Ruby repository](https://github.com/ajdavid128/phase-3-sinatra-react-project) by Leah Cardoz and Aaron David for their Phase 3 software engineering group project at Flatiron School (1 week to build).
+
+## Project Details & Motivation:
+
+THE ARCHIVE was born out of Aaron & Leah's mutual love for screenprinted artwork, and showcases screenprint artists and their prints, where users can submit their favorite artists and artwork. 
+
+The focus of this project is building a Sinatra API backend that uses Active Record to access and persist data in a database, which will be used by a separate React frontend that interacts with the database via the API.
 
 > All artwork and artist info are property of their rightful respective owner. Usage of artist and print images are for educational, non-commercial purposes only.
 
-The focus of this project is building a Sinatra API backend that uses Active Record to access and persist data in a database, which will be used by a separate React frontend that interacts with the database via the API.
+## Features:
 
 Users are able to:
 - View a timed slideshow of all of the prints on the Home page.
