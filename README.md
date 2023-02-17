@@ -2,7 +2,7 @@
 
 Welcome to the frontend of THE ARCHIVE!
 
-This React single-page application was designed in tandem with a [Ruby repository](https://github.com/ajdavid128/phase-3-sinatra-react-project) by Leah Cardoz and Aaron David for their Phase 3 software engineering group project at Flatiron School (1 week to build).
+This React single-page application was designed in tandem with a [Ruby repository](https://github.com/ajdavid128/phase-3-sinatra-react-project) by [Leah Cardoz](https://github.com/lcardoz) and [Aaron David](https://github.com/ajdavid128) for their Phase 3 software engineering group project at Flatiron School (1 week to build).
 
 ## Project Details & Motivation:
 
