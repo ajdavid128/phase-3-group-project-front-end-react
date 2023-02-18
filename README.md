@@ -1,3 +1,5 @@
+![THE ARCHIVE Logo](./src/components/archive-readme-logo.png)
+
 # THE ARCHIVE
 
 Welcome to the frontend of THE ARCHIVE!
