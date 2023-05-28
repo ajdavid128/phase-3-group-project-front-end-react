@@ -29,20 +29,20 @@ Users are able to:
 
 **Home Page:**
 
-![Home Page Slideshow Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/51b64a68-852c-485a-be97-d8131ec4ecc9.gif?ClientID=vimeo-core-prod&Date=1676663242&Signature=7aa5c985099a257b6772af43c1df6de55c873666)
+![Home Page Slideshow Gif](public/Homepage-Gif-The-Archive-high.gif)
 
 **Artists Page:**
 
-![Artist Cards Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/8b37a371-0625-48c7-af79-02cfa664d6bb.gif?ClientID=vimeo-core-prod&Date=1676670122&Signature=ddf146bce910b291472b42e44c028401dd0f1f8c)
+![Artist Cards Gif]()
 
 **Add New Artist Feature:**
 
-![Add New Artist Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/b69f974e-5edb-4551-9728-30cb75010933.gif?ClientID=vimeo-core-prod&Date=1676671759&Signature=9bb288aa8643e0f470416ac68be6740676bf888a)
+![Add New Artist Gif]()
 
 **Add New Print Feature:**
 
-![Add New Print Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/35a43647-83ee-4576-a8fb-c341ffda81ea.gif?ClientID=vimeo-core-prod&Date=1676673537&Signature=9e841b51a358439419dec073b6a49fa099a04399)
+![Add New Print Gif]()
 
 **Prints Gallery:**
 
-![Prints Gallery Gif](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/cf2e3c13-38f8-423a-af26-8f9c02bc20fc.gif?ClientID=vimeo-core-prod&Date=1676664383&Signature=05316e6edaf0c04a32edf6a6aabb81a77889299c)
+![Prints Gallery Gif]()
