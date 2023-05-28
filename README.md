@@ -31,9 +31,9 @@ Users are able to:
 
 ![Home Page Slideshow Gif](public/Homepage-Gif-The-Archive-high.gif)
 
-**Artists Page:**
+**Artists Page / Artist Detail:**
 
-![Artist Cards Gif]()
+![Artist Cards Gif](public/Artists-Page-Gif-The-Archive-high.gif)
 
 **Add New Artist Feature:**
 
