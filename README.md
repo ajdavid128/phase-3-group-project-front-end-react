@@ -45,4 +45,4 @@ Users are able to:
 
 **Prints Gallery:**
 
-![Prints Gallery Gif]()
+![Prints Gallery Gif](public/Prints-Gallery-Gif-The-Archive-high.gif)
