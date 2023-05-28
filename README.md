@@ -37,7 +37,7 @@ Users are able to:
 
 **Add New Artist Feature:**
 
-![Add New Artist Gif]()
+![Add New Artist Gif](public/Add-New-Artist-Gif-The-Archive-high.gif)
 
 **Add New Print Feature:**
 
