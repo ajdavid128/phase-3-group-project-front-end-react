@@ -41,7 +41,7 @@ Users are able to:
 
 **Add New Print Feature:**
 
-![Add New Print Gif]()
+![Add New Print Gif](public/Add-New-Print-Gif-The-Archive-high.gif)
 
 **Prints Gallery:**
 

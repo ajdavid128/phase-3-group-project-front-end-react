@@ -251,6 +251,13 @@ a:active { text-decoration: none; color: black}
 
 /* ARTIST DETAIL */
 
+#loading {
+  background-color: #aa84d0;
+  height: 900px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+}
+
 #artist-detail {
   background-color: #aa84d0;
   padding-top: 1px;

@@ -95,7 +95,7 @@ function ArtistDetail({addNewPrint, onDeletePrint, updatePrint}) {
 
 	return (
 		<>
-			{!isLoaded ? <h2>Loading...</h2> :
+			{!isLoaded ? <div id="loading"><h2>Loading...</h2></div> :
 			<div id="artist-detail">
 				<div id="artist-detail-info">
 					<h1>{name.toUpperCase()}</h1>
